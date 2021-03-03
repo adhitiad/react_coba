@@ -7,7 +7,7 @@ function Register() {
   return (
     <div className="main-page">
       <div className="left">
-        <img src={RegisterBg} className="bg-img"></img>
+        <img src={RegisterBg} className="bg-img" alt="reg"></img>
       </div>
       <div className="right">
         <p className="title">Register</p>
