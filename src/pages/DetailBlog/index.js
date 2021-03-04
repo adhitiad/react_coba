@@ -1,10 +1,14 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { LoginBg } from "../../assets";
+import { Link } from "../../components";
 import "./detil.scss";
 
 function DetailBlog() {
+  const history = useHistory();
   return (
     <div className="detail-wrap">
+      <Link nama="kembali" onClick={() => history.push("/")} />
       <img className="img-cover" src={LoginBg} alt="detil" />
       <p className="judul-detil">Judul</p>
       <p className="author-detil">Author - Date</p>

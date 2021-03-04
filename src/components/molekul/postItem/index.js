@@ -1,8 +1,11 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { RegisterBg } from "../../../assets";
+import { Button, Gap } from "../../atoms";
 import "./post.scss";
 
 function PostItem() {
+  const history = useHistory();
   return (
     <div className="post-item">
       <img className="img-thumb" src={RegisterBg} alt="post" />
@@ -18,6 +21,8 @@ function PostItem() {
           nulla. Adipisicing occaecat eiusmod Lorem in cupidatat irure qui
           consequat ex adipisicing.
         </p>
+        <Gap height={10} />
+        <Button nama="Detail" onClick={() => history.push("/detail-post")} />
       </div>
     </div>
   );

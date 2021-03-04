@@ -1,10 +1,20 @@
 import React from "react";
-import { Button, Gap, Input, TextArea, UploadImg } from "../../components";
+import { useHistory } from "react-router-dom";
+import {
+  Button,
+  Gap,
+  Input,
+  Link,
+  TextArea,
+  UploadImg,
+} from "../../components";
 import "./buat_p.scss";
 
 function BuatPost() {
+  const history = useHistory();
   return (
     <div className="blog-post">
+      <Link nama="kembali" onClick={() => history.push("/")} />
       <p className="judul">Buat Post</p>
       <Input label="Judul Post" />
       <UploadImg />
