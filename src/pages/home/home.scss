@@ -1,0 +1,18 @@
+.home-wrap {
+  padding-top: 40px;
+  .buat-wrap {
+    margin-left: auto;
+    margin-right: 0px;
+    width: 200px;
+  }
+  .post-i {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .paginasi {
+    width: 400px;
+    display: flex;
+    margin: auto;
+  }
+}

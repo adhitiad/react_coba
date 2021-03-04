@@ -1,0 +1,24 @@
+.detail-wrap {
+  .img-cover {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .judul-detil {
+    margin: 0px;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin-top: 1em;
+  }
+
+  .author-detil {
+    margin: 0px;
+    font-size: 0.84em;
+    color: rgb(158, 158, 158);
+  }
+  .konten-detil {
+    font-size: 1.1em;
+    line-height: 2em;
+  }
+}

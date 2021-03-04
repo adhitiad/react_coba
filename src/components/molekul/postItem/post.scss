@@ -1,0 +1,33 @@
+.post-item {
+  width: calc(50% - 10px);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 5px 6px 14px rgba(0, 0, 0, 0.2);
+  .img-thumb {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .content-detail {
+    padding: 16px;
+    .title {
+      margin: 0px;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+    }
+    .author {
+      margin: 0px;
+      margin-top: 4px;
+      font-size: 11px;
+      color: rgb(136, 136, 136);
+    }
+    .body {
+      margin: 0px;
+      margin-top: 10px;
+      font-size: 15.2px;
+      color: black;
+    }
+  }
+}

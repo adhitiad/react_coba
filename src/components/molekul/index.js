@@ -1,4 +1,5 @@
-import Header from './header'
-import Footer from './footer'
+import Header from "./header";
+import Footer from "./footer";
+import PostItem from "./postItem";
 
-export { Header, Footer }
+export { Header, Footer, PostItem };

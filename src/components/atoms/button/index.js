@@ -3,11 +3,9 @@ import "./btn.scss";
 
 function Button({ nama, ...rest }) {
   return (
-    <div>
-      <button className="btn" {...rest}>
-        {nama}
-      </button>
-    </div>
+    <button className="btn" {...rest}>
+      {nama}
+    </button>
   );
 }
 

@@ -3,19 +3,16 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgb(217, 24, 243);
-  padding: 20px 40px;
+  padding: 10px 20px;
   .logof {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
   }
   .sosial-wrap {
     display: flex;
     .icon-wrapper {
-      background-color: white;
-      padding: 10px;
-      border-radius: 40px;
-      margin: 0px 10px;
+      margin: 0px 5px;
       .icon-img {
         width: 30px;
         height: 30px;
@@ -27,7 +24,7 @@
 
 .copy {
   background-color: rgb(195, 24, 218);
-  padding: 10px 0px;
+  padding: 5px 0px;
   p {
     font-size: 14px;
     color: white;
