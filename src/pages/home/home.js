@@ -4,13 +4,14 @@ import Axios from "axios";
 import "./home.scss";
 import { useHistory } from "react-router-dom";
 
-function Home() {
+const Home = () => {
   const [dataBlogs, setDataBlog] = useState([]);
   useEffect(() => {
     Axios.get("http://localhost:5000/posts")
       .then((result) => {
         console.log("berhasil terhubung ke server dengan data :", result.data);
-        const resApi = result.data;
+        const resApi = result;
+
         setDataBlog(resApi.data);
       })
       .catch((err) => {
@@ -25,7 +26,7 @@ function Home() {
       </div>
       <Gap height={20} />
       <div className="post-i">
-        {dataBlogs.map((blog) => {
+        {dataBlogs?.map((blog) => {
           return (
             <PostItem key={blog._id} title={blog.title} body={blog.body} />
           );
@@ -39,6 +40,6 @@ function Home() {
       <Gap height={20} />
     </div>
   );
-}
+};
 
 export default Home;
