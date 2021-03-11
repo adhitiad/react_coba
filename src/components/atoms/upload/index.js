@@ -3,6 +3,7 @@ import { LoginBg } from "../../../assets";
 import "./upload.scss";
 
 function UploadImg() {
+
   return (
     <div className="upload">
       <img className="preview" src={LoginBg} alt="preview" />

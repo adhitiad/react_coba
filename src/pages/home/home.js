@@ -28,7 +28,7 @@ const Home = () => {
       <div className="post-i">
         {dataBlogs?.map((blog) => {
           return (
-            <PostItem key={blog._id} title={blog.title} body={blog.body} />
+            <PostItem key={blog._id} title={blog.title} body={blog.body} image={blog.image} />
           );
         })}
       </div>
